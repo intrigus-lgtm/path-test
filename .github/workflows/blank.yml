@@ -32,28 +32,28 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: "A"
-          path: $GITHUB_PATH
+          path: /usr/bin/gh
           
       - name: Upload Foo
         uses: actions/upload-artifact@v2
         with:
           name: "-A"
-          path: $GITHUB_PATH
+          path: /usr/bin/gh
           
       - name: Upload Foo
         uses: actions/upload-artifact@v2
         with:
           name: " -"
-          path: $GITHUB_PATH
+          path: /usr/bin/gh
           
       - name: Upload Foo
         uses: actions/upload-artifact@v2
         with:
           name: "? "
-          path: $GITHUB_PATH
+          path: /usr/bin/gh
           
       - name: Upload Foo
         uses: actions/upload-artifact@v2
         with:
           name: "a"
-          path: $GITHUB_PATH
+          path: /usr/bin/gh
