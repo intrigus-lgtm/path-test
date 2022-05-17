@@ -61,6 +61,13 @@ jobs:
       - name: Upload Foo
         uses: actions/upload-artifact@v2
         with:
-          name: ""
+          name: "."
           path: /usr/bin/gh
+          
+      - name: Upload Foo
+        uses: actions/upload-artifact@v2
+        with:
+          name: ".."
+          path: /usr/bin/gh
+
 
