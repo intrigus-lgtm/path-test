@@ -28,3 +28,32 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo "$GITHUB_PATH"; echo "$PATH"
+      - name: Upload Foo
+        uses: actions/upload-artifact@v2
+        with:
+          name: "A"
+          path: $GITHUB_PATH
+          
+      - name: Upload Foo
+        uses: actions/upload-artifact@v2
+        with:
+          name: "-A"
+          path: $GITHUB_PATH
+          
+      - name: Upload Foo
+        uses: actions/upload-artifact@v2
+        with:
+          name: " -"
+          path: $GITHUB_PATH
+          
+      - name: Upload Foo
+        uses: actions/upload-artifact@v2
+        with:
+          name: "? "
+          path: $GITHUB_PATH
+          
+      - name: Upload Foo
+        uses: actions/upload-artifact@v2
+        with:
+          name: "a"
+          path: $GITHUB_PATH
